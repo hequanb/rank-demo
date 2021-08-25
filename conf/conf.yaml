@@ -1,0 +1,37 @@
+name: "rank"
+mode: "dev"
+version: "v0.0.1"
+port: 8081
+start_time: "2021-07-01"
+machine_id: 1
+
+log:
+  level: "debug"
+  filename: "./tmplog/web_app.log"
+  max_size: 200
+  max_age: 30
+  max_backups: 7
+
+mysql:
+  host: "127.0.0.1"
+  port: 3306
+  user: "root"
+  password: "root123"
+  db_name: "sql_demo"
+  max_open_conns: 200
+  max_idle_conns: 50
+
+redis:
+  host: "127.0.0.1"
+  port: 6379
+  password: "rank123"
+  db: 0
+  pool_size: 100
+
+mongo:
+  host: "127.0.0.1"
+  port: 27017
+  username: "rank"
+  password: "rank123"
+  database: "rank"
+  max_pool_size: 10
